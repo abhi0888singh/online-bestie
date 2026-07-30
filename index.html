@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Friendship Day 2026 ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<!-- ================= SCREEN 1 ================= -->
+
+<section class="screen active" id="screen1">
+
+<div class="glass">
+
+<h1>💌 Imagine receiving this on Friendship Day 2026 ❤️🥹</h1>
+
+<button onclick="nextScreen(2)">
+Start
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= SCREEN 2 ================= -->
+
+<section class="screen" id="screen2">
+
+<img src="images/cat1.png" class="cat">
+
+<div class="glass">
+
+<h2>OYEEE!! 💕</h2>
+
+<p>
+I made something special just for you.<br><br>
+Wanna see it? 🥹
+</p>
+
+<div class="btns">
+
+<button onclick="nextScreen(3)">
+Yes 💖
+</button>
+
+<button onclick="showNo()">
+No 🙈
+</button>
+
+</div>
+
+<div id="noBox">
+
+<img src="images/cat-angry.png" class="cat">
+
+<h3>HOW DARE YOU!! 😾</h3>
+
+<button onclick="hideNo()">
+Go Back
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SCREEN 3 ================= -->
+
+<section class="screen" id="screen3">
+
+<img src="images/cat2.png" class="cat bounce">
+
+<div class="glass">
+
+<h2>That's my good friend 🌻💛</h2>
+
+<button onclick="nextScreen(4)">
+Continue
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= SCREEN 4 ================= -->
+
+<section class="screen" id="screen4">
+
+<img src="images/cat3.png" class="cat">
+
+<div class="glass">
+
+<h1>Happy Friendship Day 2026 ❤️</h1>
+
+<p>
+
+Thank you for being such a kind friend. 💖
+
+<br><br>
+
+Even though we're miles apart and our friendship exists online, it never feels distant.
+
+<br><br>
+
+Every chat, every meme, every reel, every laugh and every late-night conversation makes this friendship special.
+
+<br><br>
+
+I truly hope that no matter where life takes us, our friendship always stays just the way it is today. 🤍✨
+
+</p>
+
+<button onclick="nextScreen(5)">
+Next
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= SCREEN 5 ================= -->
+
+<section class="screen" id="screen5">
+
+<div class="glass">
+
+<h2>Here's a surprise for you!! 🎁</h2>
+
+<img src="images/gift.png" id="gift">
+
+<button onclick="openGift()">
+Open Gift
+</button>
+
+<div id="gallery">
+
+<img src="images/photo1.jpg" class="slide active">
+
+<img src="images/photo2.jpg" class="slide">
+
+<img src="images/photo3.jpg" class="slide">
+
+<img src="images/photo4.jpg" class="slide">
+
+<img src="images/photo5.jpg" class="slide">
+
+<p>
+Every memory with you is special ❤️
+</p>
+
+<button onclick="nextScreen(6)">
+One Last Surprise ✨
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SCREEN 6 ================= -->
+
+<section class="screen" id="screen6">
+
+<img src="images/kitten-food.png" class="cat">
+
+<div class="glass">
+
+<h2>🥟 Momos & 🥤 Cold Drink</h2>
+
+<p>
+
+Since we're online besties...
+
+<br><br>
+
+I can't treat you in person,
+
+so here's your virtual Momos & Cold Drink. 🥟🥤❤️
+
+<br><br>
+
+Enjoy your treat!! 😸💕
+
+</p>
+
+<button onclick="nextScreen(7)">
+Final Message
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= SCREEN 7 ================= -->
+
+<section class="screen" id="screen7">
+
+<img src="images/cat-heart.png" class="cat">
+
+<div class="glass">
+
+<h1>Happy Friendship Day 2026 ❤️</h1>
+
+<p>
+
+Thank you for coming into my life.
+
+Distance doesn't matter when friendship is real.
+
+I hope we'll always keep sharing reels, laughing at random things, and making unforgettable memories together.
+
+Stay happy, stay safe, and never stop being the amazing friend you are. 💖✨
+
+</p>
+
+<button onclick="hug()">
+Send Virtual Hug 🤗
+</button>
+
+<h2 id="end">
+Best Friends Forever 🌸
+</h2>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
