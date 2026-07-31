@@ -1,32 +1,38 @@
 # 💖 Friendship Day 2026
 
-A cute, interactive Friendship Day website made with HTML, CSS, and JavaScript.
+A premium interactive Friendship Day website built with **HTML, CSS, and JavaScript**.
 
-## ✨ Features
+## 🌸 Features
 
-- 💌 7 interactive screens
-- 🐱 Kawaii cat theme
-- 🎁 Animated gift opening
-- 🖼️ Friendship photo gallery
+- 💌 7 interactive animated screens
+- 🐱 Cute kawaii cat illustrations
+- 💎 Premium glassmorphism design
 - ❤️ Floating hearts
-- 🎉 Confetti and fireworks
+- ✨ Sparkles animation
+- 🎈 Floating balloons
+- 🎆 Fireworks finale
+- 🎉 Confetti effects
+- 🎁 Animated gift opening
+- 💖 Heartfelt friendship message
 - 🥟 Virtual Momos & Cold Drink
-- 📱 Mobile-friendly design
+- 🤗 Virtual Hug animation
+- 📱 Fully responsive (Mobile First)
+- 🚀 Smooth Instagram-inspired transitions
+- 🔇 No music or sound effects
 
-## 📂 Replace Your Photos
+## 📂 Project Structure
 
-Replace these files in the `images` folder:
-
-- photo1.jpg
-- photo2.jpg
-- photo3.jpg
-- photo4.jpg
-- photo5.jpg
-
-## 🚀 Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-
-## ❤️ Happy Friendship Day 2026!# online-bestie
+```
+friendship-day-2026/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+│
+└── images/
+    ├── cat1.png
+    ├── cat2.png
+    ├── cat3.png
+    ├── cat-angry.png
+    ├── cat
