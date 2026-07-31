@@ -1,7 +1,8 @@
-/* ===============================
-   FRIENDSHIP DAY 2026
-   PREMIUM STYLE
-=============================== */
+/*==================================
+ FRIENDSHIP DAY 2026
+ PREMIUM RESPONSIVE CSS
+ PART 1
+==================================*/
 
 *{
 margin:0;
@@ -14,48 +15,41 @@ scroll-behavior:smooth;
 }
 
 body{
-
 font-family:'Poppins',sans-serif;
-
-background:linear-gradient(135deg,#ffe6f2,#fff8fc,#ffeef7,#fdf3ff);
-
+background:linear-gradient(135deg,#ffe8f3,#fff7fb,#ffeef6,#fff);
 background-size:400% 400%;
-
-animation:bgMove 18s ease infinite;
-
-overflow:hidden;
-
-height:100vh;
-
+animation:bgMove 15s ease infinite;
+overflow-x:hidden;
+min-height:100dvh;
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
+padding:20px;
 }
-
-/* Animated Background */
 
 @keyframes bgMove{
 
-0%{background-position:0% 50%;}
+0%{
+background-position:0% 50%;
+}
 
-50%{background-position:100% 50%;}
+50%{
+background-position:100% 50%;
+}
 
-100%{background-position:0% 50%;}
+100%{
+background-position:0% 50%;
+}
 
 }
 
-/* ========================= */
+/* ========================== */
 
 .screen{
 
-position:absolute;
+position:fixed;
 
-width:100%;
-
-height:100vh;
+inset:0;
 
 display:flex;
 
@@ -63,15 +57,15 @@ justify-content:center;
 
 align-items:center;
 
-padding:25px;
+padding:20px;
 
 opacity:0;
 
 visibility:hidden;
 
-transform:scale(.96);
+transform:translateY(30px);
 
-transition:.7s ease;
+transition:.6s;
 
 }
 
@@ -81,81 +75,61 @@ opacity:1;
 
 visibility:visible;
 
-transform:scale(1);
-
-}
-
-/* ========================= */
-
-.glass{
-
-position:relative;
-
-width:100%;
-
-max-width:390px;
-
-padding:28px;
-
-border-radius:30px;
-
-background:rgba(255,255,255,.45);
-
-backdrop-filter:blur(22px);
-
-border:1px solid rgba(255,255,255,.6);
-
-box-shadow:
-
-0 15px 40px rgba(255,150,190,.18),
-
-0 0 25px rgba(255,255,255,.25);
-
-text-align:center;
-
-overflow:hidden;
-
-animation:cardShow .7s;
-
-}
-
-@keyframes cardShow{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
 transform:translateY(0);
 
 }
 
+/* ========================== */
+
+.glass{
+
+width:100%;
+
+max-width:430px;
+
+background:rgba(255,255,255,.48);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.6);
+
+border-radius:30px;
+
+padding:30px;
+
+text-align:center;
+
+box-shadow:
+
+0 15px 45px rgba(255,140,180,.18);
+
+position:relative;
+
+overflow:hidden;
+
 }
 
-/* ========================= */
+/* ========================== */
 
 h1{
 
-font-size:30px;
+font-size:2rem;
 
-color:#ff4d8d;
+font-weight:700;
+
+color:#ff4f93;
 
 margin-bottom:18px;
+
+line-height:1.3;
 
 }
 
 h2{
 
-font-size:25px;
+font-size:1.6rem;
 
-color:#ff5f9f;
+color:#ff5e9d;
 
 margin-bottom:15px;
 
@@ -163,35 +137,37 @@ margin-bottom:15px;
 
 .subtitle{
 
-font-size:17px;
-
-margin-bottom:20px;
+font-size:1rem;
 
 color:#666;
-
-}
-
-p{
-
-font-size:16px;
-
-line-height:1.8;
-
-color:#555;
 
 margin-bottom:18px;
 
 }
 
-/* ========================= */
+p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:20px;
+
+}
+
+/* ========================== */
 
 button{
 
 border:none;
 
+outline:none;
+
 cursor:pointer;
 
-padding:14px 30px;
+padding:15px 28px;
 
 border-radius:50px;
 
@@ -199,15 +175,15 @@ font-size:16px;
 
 font-weight:600;
 
-background:linear-gradient(45deg,#ff6cae,#ff9ac4);
+background:linear-gradient(45deg,#ff6aa8,#ff96c5);
 
 color:white;
+
+transition:.35s;
 
 box-shadow:
 
 0 10px 25px rgba(255,120,180,.35);
-
-transition:.35s;
 
 }
 
@@ -217,27 +193,27 @@ transform:translateY(-4px);
 
 box-shadow:
 
-0 16px 30px rgba(255,120,180,.45);
+0 18px 35px rgba(255,120,180,.45);
 
 }
 
 button:active{
 
-transform:scale(.95);
+transform:scale(.96);
 
 }
 
-/* ========================= */
+/* ========================== */
 
 .btn-row{
 
 display:flex;
 
-justify-content:center;
-
 gap:15px;
 
-margin-top:15px;
+justify-content:center;
+
+margin-top:20px;
 
 }
 
@@ -247,37 +223,21 @@ flex:1;
 
 }
 
-/* ========================= */
+/* ========================== */
 
 .cat{
 
-width:160px;
+width:min(170px,45vw);
 
 display:block;
 
-margin:0 auto 20px;
+margin:0 auto 18px;
 
 animation:floatCat 3s ease-in-out infinite;
 
 }
 
 @keyframes floatCat{
-
-0%{transform:translateY(0);}
-
-50%{transform:translateY(-10px);}
-
-100%{transform:translateY(0);}
-
-}
-
-.bounce{
-
-animation:bounce 1.6s infinite;
-
-}
-
-@keyframes bounce{
 
 0%,100%{
 
@@ -287,13 +247,13 @@ transform:translateY(0);
 
 50%{
 
-transform:translateY(-15px);
+transform:translateY(-10px);
 
 }
 
 }
 
-/* ========================= */
+/* ========================== */
 
 #noBox{
 
@@ -317,27 +277,48 @@ opacity:1;
 
 }
 
-}
+}/*==================================
+ PART 2
+ GIFT • FOOD • FINAL SCREEN
+==================================*/
 
-/* ========================= */
+/* Gift */
 
 #gift{
 
-width:170px;
+width:min(180px,45vw);
 
 display:block;
 
-margin:20px auto;
+margin:25px auto;
 
 cursor:pointer;
 
 transition:.5s;
 
+animation:giftFloat 2.5s ease-in-out infinite;
+
 }
 
 #gift:hover{
 
-transform:scale(1.08) rotate(-6deg);
+transform:scale(1.08) rotate(-8deg);
+
+}
+
+@keyframes giftFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
 
 }
 
@@ -345,27 +326,71 @@ transform:scale(1.08) rotate(-6deg);
 
 display:none;
 
-animation:fade .8s;
+animation:fadeGift .8s ease;
+
+}
+
+@keyframes fadeGift{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
 }
 
 /* ========================= */
 
+/* Typewriter */
+
+#typewriter{
+
+min-height:250px;
+
+text-align:left;
+
+white-space:pre-line;
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+/* ========================= */
+
+/* Momos & Cold Drink */
+
 .food-box{
 
 display:flex;
 
-gap:15px;
-
 justify-content:center;
 
-margin:20px 0;
+gap:18px;
+
+margin:25px 0;
+
+flex-wrap:wrap;
 
 }
 
 .food-card{
 
-width:120px;
+width:140px;
 
 padding:18px;
 
@@ -375,13 +400,25 @@ background:rgba(255,255,255,.55);
 
 box-shadow:
 
-0 10px 20px rgba(255,170,200,.18);
+0 10px 25px rgba(255,170,200,.18);
+
+transition:.35s;
+
+}
+
+.food-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 18px 35px rgba(255,150,190,.35);
 
 }
 
 .food-card .emoji{
 
-font-size:40px;
+font-size:45px;
 
 margin-bottom:10px;
 
@@ -389,43 +426,63 @@ margin-bottom:10px;
 
 .food-card span{
 
+font-size:17px;
+
 font-weight:600;
 
-color:#ff4f8b;
+color:#ff4d8d;
 
 }
 
 /* ========================= */
 
+/* Final Card */
+
 .final-card{
 
-animation:zoomIn .8s;
+animation:zoomCard .8s ease;
 
 }
 
-@keyframes zoomIn{
+@keyframes zoomCard{
 
 from{
 
-transform:scale(.8);
-
 opacity:0;
+
+transform:scale(.8);
 
 }
 
 to{
 
-transform:scale(1);
-
 opacity:1;
 
+transform:scale(1);
+
 }
 
 }
+
+/* Final Button */
+
+.hug-btn{
+
+margin-top:15px;
+
+}
+
+/* End Message */
 
 #endMessage{
 
-margin-top:20px;
+display:none;
+
+margin-top:25px;
+
+font-size:28px;
+
+font-weight:700;
 
 color:#ff4d8d;
 
@@ -451,51 +508,42 @@ transform:scale(1.08);
 
 /* ========================= */
 
-@media(max-width:768px){
+/* General Images */
 
-.glass{
+img{
 
-width:94%;
+max-width:100%;
 
-padding:22px;
+height:auto;
 
-}
+display:block;
 
-.cat{
-
-width:135px;
+margin:auto;
 
 }
 
-.food-box{
+/* ========================= */
 
-flex-direction:column;
+/* Better Paragraph Spacing */
 
-align-items:center;
+.glass p{
 
-}
-
-.food-card{
-
-width:90%;
+margin-bottom:18px;
 
 }
+
+/* ========================= */
+
+/* Buttons */
 
 button{
 
-width:100%;
+min-height:52px;
 
-}
-
-.btn-row{
-
-flex-direction:column;
-
-}
-
-}/* ==========================================
-   PART 2B - PREMIUM EFFECTS
-========================================== */
+}/*==================================
+ PART 3
+ HEARTS • SPARKLES • BALLOONS
+==================================*/
 
 /* Floating Hearts */
 
@@ -505,8 +553,8 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-pointer-events:none;
 overflow:hidden;
+pointer-events:none;
 z-index:1;
 }
 
@@ -521,7 +569,7 @@ opacity:.9;
 @keyframes heartFloat{
 
 0%{
-transform:translateY(0) scale(.8) rotate(0deg);
+transform:translateY(0) scale(.7) rotate(0deg);
 opacity:0;
 }
 
@@ -530,12 +578,13 @@ opacity:1;
 }
 
 100%{
-transform:translateY(-120vh) scale(1.5) rotate(360deg);
+transform:translateY(-120vh) scale(1.4) rotate(360deg);
 opacity:0;
 }
 
 }
 
+/* ============================== */
 /* Sparkles */
 
 #sparkles{
@@ -552,14 +601,14 @@ position:absolute;
 width:8px;
 height:8px;
 
-background:white;
-
 border-radius:50%;
 
+background:white;
+
 box-shadow:
-0 0 10px white,
-0 0 20px #ffd7ec,
-0 0 35px #fff;
+0 0 8px white,
+0 0 15px #ffd7ec,
+0 0 30px #fff;
 
 animation:twinkle 2s infinite;
 
@@ -568,21 +617,18 @@ animation:twinkle 2s infinite;
 @keyframes twinkle{
 
 0%,100%{
-
 opacity:.2;
 transform:scale(.5);
-
 }
 
 50%{
-
 opacity:1;
 transform:scale(1.4);
-
 }
 
 }
 
+/* ============================== */
 /* Balloons */
 
 .balloon{
@@ -591,13 +637,13 @@ position:fixed;
 
 bottom:-120px;
 
-font-size:45px;
+font-size:40px;
 
 pointer-events:none;
 
 animation:balloonUp linear forwards;
 
-z-index:2;
+z-index:3;
 
 }
 
@@ -617,6 +663,7 @@ transform:translateY(-130vh);
 
 }
 
+/* ============================== */
 /* Fireworks */
 
 .firework{
@@ -628,7 +675,7 @@ height:10px;
 
 border-radius:50%;
 
-background:#fff;
+background:white;
 
 pointer-events:none;
 
@@ -636,7 +683,8 @@ z-index:999;
 
 }
 
-/* Glowing Glass */
+/* ============================== */
+/* Premium Glow */
 
 .glass::before{
 
@@ -646,21 +694,16 @@ position:absolute;
 
 inset:-2px;
 
-border-radius:32px;
+border-radius:30px;
 
 background:linear-gradient(
-
 45deg,
-
-rgba(255,255,255,.8),
-
+rgba(255,255,255,.9),
 rgba(255,180,220,.3),
-
-rgba(255,255,255,.8)
-
+rgba(255,255,255,.9)
 );
 
-filter:blur(14px);
+filter:blur(12px);
 
 z-index:-1;
 
@@ -668,58 +711,7 @@ opacity:.8;
 
 }
 
-/* Gift Glow */
-
-#gift{
-
-animation:giftFloat 2.5s ease-in-out infinite;
-
-}
-
-@keyframes giftFloat{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-8px);
-
-}
-
-}
-
-/* Cat Hover */
-
-.cat:hover{
-
-transform:scale(1.06);
-
-transition:.3s;
-
-}
-
-/* Food Card Hover */
-
-.food-card{
-
-transition:.35s;
-
-}
-
-.food-card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:
-
-0 18px 35px rgba(255,150,190,.35);
-
-}
-
+/* ============================== */
 /* Button Shine */
 
 button{
@@ -740,7 +732,7 @@ top:0;
 
 left:-120%;
 
-width:80%;
+width:70%;
 
 height:100%;
 
@@ -758,96 +750,258 @@ left:140%;
 
 }
 
-/* Fade Animation */
-
-.fade{
-
-animation:fadeScreen .8s;
-
-}
-
-@keyframes fadeScreen{
-
-from{
-
-opacity:0;
-
-transform:scale(.95);
-
-}
-
-to{
-
-opacity:1;
-
-transform:scale(1);
-
-}
-
-}
-
-/* Text Glow */
-
-h1{
-
-text-shadow:
-
-0 0 10px rgba(255,180,220,.45);
-
-}
-
-/* Final Message */
-
-#endMessage{
-
-font-weight:700;
-
-letter-spacing:1px;
-
-}
-
-/* Scrollbar */
-
-body::-webkit-scrollbar{
-
-display:none;
-
-}
-
-/* Small Phones */
-
-@media(max-width:380px){
-
-h1{
-
-font-size:24px;
-
-}
-
-h2{
-
-font-size:21px;
-
-}
-
-p{
-
-font-size:14px;
-
-}
+/* ============================== */
+/* Cat Hover */
 
 .cat{
 
-width:120px;
+transition:.3s;
 
+}
+
+.cat:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ============================== */
+/*/*==================================
+ PART 4
+ RESPONSIVE DESIGN
+==================================*/
+
+/* ---------- Large Tablets ---------- */
+
+@media (max-width:1024px){
+
+.glass{
+max-width:500px;
+padding:28px;
+}
+
+.cat{
+width:160px;
+}
+
+h1{
+font-size:32px;
+}
+
+h2{
+font-size:26px;
+}
+
+}
+
+/* ---------- Tablets ---------- */
+
+@media (max-width:768px){
+
+body{
+padding:15px;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.screen{
+padding:20px;
+min-height:100dvh;
+}
+
+.glass{
+width:95%;
+max-width:420px;
+padding:22px;
+border-radius:24px;
+}
+
+.cat{
+width:130px;
+}
+
+#gift{
+width:140px;
+}
+
+.btn-row{
+flex-direction:column;
+gap:12px;
+}
+
+.btn-row button{
+width:100%;
 }
 
 button{
+width:100%;
+font-size:16px;
+padding:14px;
+}
 
+.food-box{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+.food-card{
+width:100%;
+max-width:220px;
+}
+
+#typewriter{
+min-height:220px;
 font-size:15px;
+}
 
-padding:13px;
+h1{
+font-size:28px;
+}
+
+h2{
+font-size:22px;
+}
+
+p{
+font-size:15px;
+line-height:1.7;
+}
 
 }
 
+/* ---------- Phones ---------- */
+
+@media (max-width:480px){
+
+body{
+padding:12px;
+}
+
+.glass{
+width:100%;
+padding:18px;
+border-radius:22px;
+}
+
+.cat{
+width:110px;
+margin-bottom:15px;
+}
+
+#gift{
+width:120px;
+}
+
+h1{
+font-size:22px;
+line-height:1.3;
+}
+
+h2{
+font-size:19px;
+}
+
+.subtitle{
+font-size:14px;
+}
+
+p{
+font-size:14px;
+line-height:1.6;
+}
+
+button{
+padding:13px;
+font-size:15px;
+}
+
+.food-card{
+padding:16px;
+}
+
+.food-card .emoji{
+font-size:38px;
+}
+
+#typewriter{
+min-height:190px;
+font-size:14px;
+}
+
+#endMessage{
+font-size:22px;
+}
+
+}
+
+/* ---------- Very Small Phones ---------- */
+
+@media (max-width:360px){
+
+.glass{
+padding:15px;
+}
+
+.cat{
+width:95px;
+}
+
+#gift{
+width:100px;
+}
+
+h1{
+font-size:20px;
+}
+
+h2{
+font-size:18px;
+}
+
+p{
+font-size:13px;
+}
+
+button{
+font-size:14px;
+padding:12px;
+}
+
+}
+
+/* ---------- Landscape Phones ---------- */
+
+@media (max-height:600px){
+
+.screen{
+padding:15px;
+align-items:flex-start;
+overflow-y:auto;
+}
+
+.glass{
+margin:20px auto;
+}
+
+}
+
+/* ---------- Images ---------- */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+/* ---------- Prevent Overflow ---------- */
+
+*{
+word-wrap:break-word;
+}
+
+body,
+.screen,
+.glass{
+overflow-x:hidden;
 }
