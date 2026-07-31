@@ -1,35 +1,37 @@
-/* ===========================
+/* ===============================
    FRIENDSHIP DAY 2026
-   Premium Pastel Theme
-=========================== */
+   PREMIUM STYLE
+=============================== */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
 
-    font-family:'Poppins',sans-serif;
+font-family:'Poppins',sans-serif;
 
-    overflow:hidden;
+background:linear-gradient(135deg,#ffe6f2,#fff8fc,#ffeef7,#fdf3ff);
 
-    background:linear-gradient(
-        135deg,
-        #ffe6ef,
-        #fff8fc,
-        #f7ebff,
-        #ffeef7
-    );
+background-size:400% 400%;
 
-    background-size:400% 400%;
+animation:bgMove 18s ease infinite;
 
-    animation:bgMove 18s ease infinite;
+overflow:hidden;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
 
 }
 
@@ -37,32 +39,22 @@ body{
 
 @keyframes bgMove{
 
-0%{
-background-position:0% 50%;
-}
+0%{background-position:0% 50%;}
 
-50%{
-background-position:100% 50%;
-}
+50%{background-position:100% 50%;}
 
-100%{
-background-position:0% 50%;
-}
+100%{background-position:0% 50%;}
 
 }
 
-/* ======================
-Screen
-====================== */
+/* ========================= */
 
 .screen{
 
 position:absolute;
 
-top:0;
-left:0;
-
 width:100%;
+
 height:100vh;
 
 display:flex;
@@ -79,7 +71,7 @@ visibility:hidden;
 
 transform:scale(.96);
 
-transition:.8s;
+transition:.7s ease;
 
 }
 
@@ -93,483 +85,41 @@ transform:scale(1);
 
 }
 
-/* ======================
-Glass Card
-====================== */
+/* ========================= */
 
 .glass{
 
+position:relative;
+
 width:100%;
 
-max-width:420px;
+max-width:390px;
 
 padding:28px;
 
-border-radius:28px;
+border-radius:30px;
 
 background:rgba(255,255,255,.45);
 
 backdrop-filter:blur(22px);
 
-border:1px solid rgba(255,255,255,.55);
+border:1px solid rgba(255,255,255,.6);
 
 box-shadow:
 
-0 15px 50px rgba(255,150,190,.20),
+0 15px 40px rgba(255,150,190,.18),
 
-0 5px 18px rgba(255,255,255,.30);
+0 0 25px rgba(255,255,255,.25);
 
 text-align:center;
 
-}
-
-/* ======================
-Heading
-====================== */
-
-h1{
-
-font-size:32px;
-
-color:#ff4b88;
-
-margin-bottom:18px;
-
-}
-
-h2{
-
-font-size:28px;
-
-color:#ff5c98;
-
-margin-bottom:18px;
-
-}
-
-h3{
-
-font-size:24px;
-
-color:#ff3d63;
-
-margin:18px 0;
-
-}
-
-p{
-
-font-size:17px;
-
-line-height:1.8;
-
-color:#555;
-
-margin-bottom:20px;
-
-}
-
-/* ======================
-Buttons
-====================== */
-
-button{
-
-border:none;
-
-cursor:pointer;
-
-padding:14px 34px;
-
-border-radius:40px;
-
-font-size:17px;
-
-font-weight:600;
-
-color:white;
-
-background:linear-gradient(
-
-45deg,
-
-#ff6ba8,
-
-#ff93bf
-
-);
-
-box-shadow:
-
-0 10px 25px rgba(255,100,170,.35);
-
-transition:.35s;
-
-margin:8px;
-
-}
-
-button:hover{
-
-transform:translateY(-4px);
-
-box-shadow:
-
-0 18px 35px rgba(255,100,170,.45);
-
-}
-
-button:active{
-
-transform:scale(.95);
-
-}
-
-/* ======================
-Cats
-====================== */
-
-.cat{
-
-width:180px;
-
-display:block;
-
-margin:0 auto 20px;
-
-animation:floatCat 3s ease-in-out infinite;
-
-}
-
-@keyframes floatCat{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-12px);
-
-}
-
-100%{
-
-transform:translateY(0);
-
-}
-
-}
-
-/* Bounce */
-
-.bounce{
-
-animation:bounce 1.6s infinite;
-
-}
-
-@keyframes bounce{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-20px);
-
-}
-
-}
-
-/* ======================
-Gift
-====================== */
-
-#gift{
-
-width:180px;
-
-margin:25px auto;
-
-display:block;
-
-transition:.6s;
-
-cursor:pointer;
-
-}
-
-#gift:hover{
-
-transform:scale(1.08) rotate(-6deg);
-
-}
-
-/* ======================
-Gallery
-====================== */
-
-#gallery{
-
-display:none;
-
-margin-top:25px;
-
-}
-
-.slide{
-
-display:none;
-
-width:100%;
-
-border-radius:22px;
-
-border:6px solid white;
-
-box-shadow:
-
-0 0 30px rgba(255,170,210,.6);
-
-}
-
-.slide.active{
-
-display:block;
-
-animation:fadeZoom 6s linear;
-
-}
-
-@keyframes fadeZoom{
-
-0%{
-
-opacity:0;
-
-transform:scale(1);
-
-}
-
-50%{
-
-opacity:1;
-
-transform:scale(1.08);
-
-}
-
-100%{
-
-opacity:1;
-
-transform:scale(1.12);
-
-}
-
-}
-/* ==========================================
-   SECTION 2
-   Floating Hearts • Sparkles • Balloons
-   Fireworks • Confetti • Responsive
-========================================== */
-
-/* Floating Hearts */
-
-#hearts{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    overflow:hidden;
-    z-index:1;
-}
-
-.heart{
-    position:absolute;
-    bottom:-60px;
-    font-size:22px;
-    opacity:.9;
-    animation:heartFloat linear forwards;
-}
-
-@keyframes heartFloat{
-
-0%{
-transform:translateY(0) scale(.8) rotate(0deg);
-opacity:0;
-}
-
-10%{
-opacity:1;
-}
-
-100%{
-transform:translateY(-120vh) scale(1.4) rotate(360deg);
-opacity:0;
-}
-
-}
-
-/* Sparkles */
-
-.sparkle{
-
-position:absolute;
-
-width:8px;
-height:8px;
-
-border-radius:50%;
-
-background:white;
-
-box-shadow:
-
-0 0 8px white,
-0 0 18px white,
-0 0 30px #ffd5ea;
-
-animation:twinkle 2s infinite ease-in-out;
-
-}
-
-@keyframes twinkle{
-
-0%,100%{
-
-opacity:.2;
-transform:scale(.5);
-
-}
-
-50%{
-
-opacity:1;
-transform:scale(1.3);
-
-}
-
-}
-
-/* Balloons */
-
-.balloon{
-
-position:absolute;
-
-bottom:-200px;
-
-font-size:48px;
-
-animation:balloonUp 11s linear forwards;
-
-}
-
-@keyframes balloonUp{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-100%{
-
-transform:translateY(-140vh);
-
-}
-
-}
-
-/* Fireworks */
-
-.firework{
-
-position:absolute;
-
-width:10px;
-
-height:10px;
-
-border-radius:50%;
-
-background:#fff;
-
-animation:explode 1.2s ease-out forwards;
-
-}
-
-@keyframes explode{
-
-0%{
-
-transform:scale(.2);
-
-opacity:1;
-
-}
-
-100%{
-
-transform:scale(15);
-
-opacity:0;
-
-}
-
-}
-
-/* Glowing Border */
-
-.glass::before{
-
-content:"";
-
-position:absolute;
-
-inset:-2px;
-
-border-radius:30px;
-
-background:linear-gradient(
-
-45deg,
-
-rgba(255,255,255,.6),
-
-rgba(255,170,220,.35),
-
-rgba(255,255,255,.6)
-
-);
-
-z-index:-1;
-
-filter:blur(14px);
-
-opacity:.7;
-
-}
-
-/* Card Animation */
-
-.glass{
-
-animation:cardIn .8s ease;
-
-position:relative;
-
 overflow:hidden;
 
+animation:cardShow .7s;
+
 }
 
-@keyframes cardIn{
+@keyframes cardShow{
 
 from{
 
@@ -589,103 +139,167 @@ transform:translateY(0);
 
 }
 
-/* Photo Glow */
+/* ========================= */
 
-.slide{
-
-transition:1s;
-
-}
-
-.slide:hover{
-
-transform:scale(1.03);
-
-box-shadow:
-
-0 0 25px #ff8ec0,
-
-0 0 55px #ffd6e8;
-
-}
-
-/* Caption */
-
-#gallery p{
-
-margin-top:18px;
-
-font-size:18px;
-
-font-weight:600;
-
-color:#ff4f8b;
-
-animation:pulse 2s infinite;
-
-}
-
-@keyframes pulse{
-
-0%,100%{
-
-transform:scale(1);
-
-}
-
-50%{
-
-transform:scale(1.06);
-
-}
-
-}
-
-/* End Message */
-
-#end{
-
-margin-top:30px;
-
-color:#ff4f8b;
+h1{
 
 font-size:30px;
 
-animation:glowText 2s infinite;
+color:#ff4d8d;
+
+margin-bottom:18px;
 
 }
 
-@keyframes glowText{
+h2{
 
-0%{
+font-size:25px;
 
-text-shadow:0 0 5px #fff;
+color:#ff5f9f;
+
+margin-bottom:15px;
+
+}
+
+.subtitle{
+
+font-size:17px;
+
+margin-bottom:20px;
+
+color:#666;
+
+}
+
+p{
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:18px;
+
+}
+
+/* ========================= */
+
+button{
+
+border:none;
+
+cursor:pointer;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+background:linear-gradient(45deg,#ff6cae,#ff9ac4);
+
+color:white;
+
+box-shadow:
+
+0 10px 25px rgba(255,120,180,.35);
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 16px 30px rgba(255,120,180,.45);
+
+}
+
+button:active{
+
+transform:scale(.95);
+
+}
+
+/* ========================= */
+
+.btn-row{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-top:15px;
+
+}
+
+.btn-row button{
+
+flex:1;
+
+}
+
+/* ========================= */
+
+.cat{
+
+width:160px;
+
+display:block;
+
+margin:0 auto 20px;
+
+animation:floatCat 3s ease-in-out infinite;
+
+}
+
+@keyframes floatCat{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-10px);}
+
+100%{transform:translateY(0);}
+
+}
+
+.bounce{
+
+animation:bounce 1.6s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
 
 }
 
 50%{
 
-text-shadow:
-
-0 0 12px #ff77b8,
-
-0 0 22px #ff9bc8;
-
-}
-
-100%{
-
-text-shadow:0 0 5px #fff;
+transform:translateY(-15px);
 
 }
 
 }
 
-/* Fade Transition */
+/* ========================= */
 
-.fade{
+#noBox{
 
-animation:fade .8s;
+display:none;
+
+animation:fade .5s;
 
 }
 
@@ -705,7 +319,137 @@ opacity:1;
 
 }
 
-/* Mobile */
+/* ========================= */
+
+#gift{
+
+width:170px;
+
+display:block;
+
+margin:20px auto;
+
+cursor:pointer;
+
+transition:.5s;
+
+}
+
+#gift:hover{
+
+transform:scale(1.08) rotate(-6deg);
+
+}
+
+#giftMessage{
+
+display:none;
+
+animation:fade .8s;
+
+}
+
+/* ========================= */
+
+.food-box{
+
+display:flex;
+
+gap:15px;
+
+justify-content:center;
+
+margin:20px 0;
+
+}
+
+.food-card{
+
+width:120px;
+
+padding:18px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.55);
+
+box-shadow:
+
+0 10px 20px rgba(255,170,200,.18);
+
+}
+
+.food-card .emoji{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.food-card span{
+
+font-weight:600;
+
+color:#ff4f8b;
+
+}
+
+/* ========================= */
+
+.final-card{
+
+animation:zoomIn .8s;
+
+}
+
+@keyframes zoomIn{
+
+from{
+
+transform:scale(.8);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+#endMessage{
+
+margin-top:20px;
+
+color:#ff4d8d;
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
+
+/* ========================= */
 
 @media(max-width:768px){
 
@@ -719,37 +463,21 @@ padding:22px;
 
 .cat{
 
-width:140px;
+width:135px;
 
 }
 
-#gift{
+.food-box{
 
-width:150px;
+flex-direction:column;
 
-}
-
-h1{
-
-font-size:27px;
+align-items:center;
 
 }
 
-h2{
+.food-card{
 
-font-size:23px;
-
-}
-
-h3{
-
-font-size:21px;
-
-}
-
-p{
-
-font-size:15px;
+width:90%;
 
 }
 
@@ -757,35 +485,348 @@ button{
 
 width:100%;
 
-padding:15px;
+}
 
-font-size:16px;
+.btn-row{
 
-margin-top:12px;
+flex-direction:column;
 
 }
 
-.slide{
+}/* ==========================================
+   PART 2B - PREMIUM EFFECTS
+========================================== */
 
-border-radius:18px;
+/* Floating Hearts */
+
+#hearts{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:1;
+}
+
+.heart{
+position:absolute;
+bottom:-50px;
+font-size:24px;
+animation:heartFloat linear forwards;
+opacity:.9;
+}
+
+@keyframes heartFloat{
+
+0%{
+transform:translateY(0) scale(.8) rotate(0deg);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) scale(1.5) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/* Sparkles */
+
+#sparkles{
+position:fixed;
+inset:0;
+pointer-events:none;
+z-index:2;
+}
+
+.sparkle{
+
+position:absolute;
+
+width:8px;
+height:8px;
+
+background:white;
+
+border-radius:50%;
+
+box-shadow:
+0 0 10px white,
+0 0 20px #ffd7ec,
+0 0 35px #fff;
+
+animation:twinkle 2s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.4);
 
 }
 
 }
 
-/* Very Small Phones */
+/* Balloons */
+
+.balloon{
+
+position:fixed;
+
+bottom:-120px;
+
+font-size:45px;
+
+pointer-events:none;
+
+animation:balloonUp linear forwards;
+
+z-index:2;
+
+}
+
+@keyframes balloonUp{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-130vh);
+
+}
+
+}
+
+/* Fireworks */
+
+.firework{
+
+position:fixed;
+
+width:10px;
+height:10px;
+
+border-radius:50%;
+
+background:#fff;
+
+pointer-events:none;
+
+z-index:999;
+
+}
+
+/* Glowing Glass */
+
+.glass::before{
+
+content:"";
+
+position:absolute;
+
+inset:-2px;
+
+border-radius:32px;
+
+background:linear-gradient(
+
+45deg,
+
+rgba(255,255,255,.8),
+
+rgba(255,180,220,.3),
+
+rgba(255,255,255,.8)
+
+);
+
+filter:blur(14px);
+
+z-index:-1;
+
+opacity:.8;
+
+}
+
+/* Gift Glow */
+
+#gift{
+
+animation:giftFloat 2.5s ease-in-out infinite;
+
+}
+
+@keyframes giftFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+/* Cat Hover */
+
+.cat:hover{
+
+transform:scale(1.06);
+
+transition:.3s;
+
+}
+
+/* Food Card Hover */
+
+.food-card{
+
+transition:.35s;
+
+}
+
+.food-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 18px 35px rgba(255,150,190,.35);
+
+}
+
+/* Button Shine */
+
+button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+button::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:80%;
+
+height:100%;
+
+background:rgba(255,255,255,.35);
+
+transform:skewX(-25deg);
+
+transition:.6s;
+
+}
+
+button:hover::before{
+
+left:140%;
+
+}
+
+/* Fade Animation */
+
+.fade{
+
+animation:fadeScreen .8s;
+
+}
+
+@keyframes fadeScreen{
+
+from{
+
+opacity:0;
+
+transform:scale(.95);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/* Text Glow */
+
+h1{
+
+text-shadow:
+
+0 0 10px rgba(255,180,220,.45);
+
+}
+
+/* Final Message */
+
+#endMessage{
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+/* Scrollbar */
+
+body::-webkit-scrollbar{
+
+display:none;
+
+}
+
+/* Small Phones */
 
 @media(max-width:380px){
 
 h1{
 
-font-size:22px;
+font-size:24px;
 
 }
 
 h2{
 
-font-size:20px;
+font-size:21px;
 
 }
 
@@ -801,20 +842,12 @@ width:120px;
 
 }
 
-}
+button{
 
-/* Smooth scrolling */
+font-size:15px;
 
-html{
-
-scroll-behavior:smooth;
+padding:13px;
 
 }
-
-/* Hide Scrollbar */
-
-body::-webkit-scrollbar{
-
-display:none;
 
 }
